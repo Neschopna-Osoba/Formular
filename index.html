@@ -6,9 +6,97 @@
 </head>
 
 <body>
-	<div id="app"></div>
+<form>
+	<fieldset>
+		<legend>Přihlašovací údaje:</legend>
+		Přezdívka:<br>
+		<input type="text" name="prezdivka"><br><br>
+		Heslo:<br>
+		<input type="password" name="heslo"><br>
+	</fieldset>
 
-	<script src="src/index.js"></script>
+	<fieldset>
+		<legend>Osobní informace:</legend>
+		Jméno:<br>
+		<input type="text" name="jmeno"><br><br>
+		Příjmení:<br>
+		<input type="text" name="prijmeni"><br><br>
+		Titul:<br>
+		<input type="text" name="titul"><br><br>
+		<input type="radio" name="gender" value="muz" checked> Muž<br>
+		<input type="radio" name="gender" value="zena"> Žena<br>
+		<input type="radio" name="gender" value="jine"> Jiné<br>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Kontakt:</legend>
+		E-Mail::<br>
+		<input type="text" name="email"><br><br> 
+		Telefon:<br>
+		<input type="text" name="telefon"><br>
+	</fieldset>
+
+	<fieldset>
+		<legend>Adresa:</legend>
+		 Ulice a číslo popisné:<br>
+		<input type="text" name="ulice"><br><br>
+			Město:<br>
+		<input type="text" name="mesto"><br><br>
+			PSČ:<br>
+		<input type="text" name="pcs"><br><br>
+		 Kraj:<br>
+		<select name="kraj">
+			<option>
+				Praha
+			</option>
+			<option>
+				Středočeský
+			</option>
+			<option>
+				Jihočeský
+			</option>
+			<option>
+				Plzeňský
+			</option>
+			<option>
+				Karlovarský
+			</option>
+			<option>
+				Ústecký
+			</option>
+			<option>
+				Liberecký
+			</option>
+			<option>
+				Královéhradecký
+			</option>
+			<option>
+				Pardubický
+			</option>
+			<option>
+				Vysočina
+			</option>
+			<option>
+				Jihomoravský
+			</option>
+			<option>
+				Olomoucký
+			</option>
+			<option>
+				Moravskoslezský
+			</option>
+			<option>
+				Zlínský
+			</option>
+		</select>
+	</fieldset>
+
+<br>
+		<input type="checkbox" name="gender" value="souhlas" > Souhlasím s <a href="https://www.shoptet.cz/podminky-ochrany-osobnich-udaju/">podmínkami</a> využívání mých osobních údajů<br>
+<BR>
+
+	<input type="submit" value="Potvrdit">
+</form>
 </body>
 
 </html>
